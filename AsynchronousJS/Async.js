@@ -12,6 +12,9 @@ console.log("with a");
 console.log("spoon ");
 */
 
+
+
+
 //Asynchronous
 /*
 console.log("I");
@@ -124,6 +127,7 @@ console.log("Serve ice cream");
 order(0,production);
 */
 
+/*
 let stocks = {
   Fruits: ["strawberry","grapes", "banana","apple"],
   liquid: ["water","ice"],
@@ -183,3 +187,76 @@ order(2000, ()=>console.log(`${stocks.Fruits[0]} was selected`))
 .finally( () => {
   console.log("Day ended, shop is closed");
 })
+*/
+
+let stocks = {
+  Fruits: ["strawberry","grapes", "banana","apple"],
+  liquid: ["water","ice"],
+  holder: ["cone","cup","stick"],
+  toppings: ["chocolate","peanuts"]
+};
+
+let isShopOpen = true;
+/*
+let order =  () => {
+
+  return new Promise( (resolve,reject) => {
+    if(true){
+      resolve()
+    }
+    else{
+      reject()
+    }
+  })
+}
+*/
+
+/*
+async function order (){
+try{
+  await abc;
+}
+
+catch(error){
+  console.log("it does not exists",error)
+}
+
+finally{
+  console.log("runs code anyways")
+}
+} 
+
+
+order().then(()=> {
+  console.log("ifiuirufir")
+});
+*/
+/*can add other then chains and catch and finally after that*/
+
+let toppingsChoice = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(
+        console.log("which topping would you love")
+      );
+    },3000);
+  });
+};
+
+async function kitchen () {
+  console.log("a")
+  console.log("b")
+  console.log("c")
+
+  await toppingsChoice();
+
+  console.log("d")
+  console.log("e")
+
+}
+
+kitchen()
+
+console.log("doing the dishes")
+console.log("cleaning the tables")
+console.log("taking others orders")
