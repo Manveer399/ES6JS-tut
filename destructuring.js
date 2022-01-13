@@ -45,7 +45,7 @@ const {name ,age} = personTwo;
 console.log(name);
 console.log(age);
 
-const {name :firstname,age } = personTwo;
+const {name :firstname,age:Age } = personTwo;
 
 //default values 
 const {name :firstname='john',age } = personTwo;

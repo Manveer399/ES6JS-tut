@@ -13,8 +13,6 @@ console.log("spoon ");
 */
 
 
-
-
 //Asynchronous
 /*
 console.log("I");
@@ -28,6 +26,7 @@ setTimeout(()=> {
 console.log("with a");
 
 console.log("spoon ");
+
 */
 
 //callback
@@ -126,6 +125,8 @@ console.log("Serve ice cream");
 }
 order(0,production);
 */
+
+//Promises 
 
 /*
 let stocks = {
@@ -233,6 +234,7 @@ order().then(()=> {
 */
 /*can add other then chains and catch and finally after that*/
 
+/*
 let toppingsChoice = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -260,3 +262,4 @@ kitchen()
 console.log("doing the dishes")
 console.log("cleaning the tables")
 console.log("taking others orders")
+*/
